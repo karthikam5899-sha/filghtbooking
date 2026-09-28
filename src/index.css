@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  background: #f6f3ee;
+  color: #27352f;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Shared Aurelia tokens keep the existing booking workflow visually consistent. */
+.bg-blue-600,
+.bg-blue-700 {
+  background-color: #a2783a !important;
+}
+
+.bg-blue-50 {
+  background-color: #f3eadb !important;
+}
+
+.text-blue-600,
+.text-blue-400 {
+  color: #a2783a !important;
+}
+
+.border-blue-600,
+.border-blue-500,
+.border-blue-200 {
+  border-color: #d4b477 !important;
+}
+
+.ring-blue-100,
+.ring-blue-500\/20 {
+  --tw-ring-color: rgb(212 180 119 / 0.2) !important;
+}
+
+.accent-blue-600 {
+  accent-color: #a2783a !important;
+}
+
+.bg-slate-50 {
+  background-color: #f6f3ee !important;
+}
+
+.bg-slate-950,
+.bg-slate-900 {
+  background-color: #27352f !important;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #d4b477;
+  color: white;
+}
+
+.flight-shadow {
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08),
+    0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.seat {
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.seat:hover {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.card-perspective {
+  perspective: 1000px;
+}
